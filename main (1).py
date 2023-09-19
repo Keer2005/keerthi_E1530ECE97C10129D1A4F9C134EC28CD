@@ -1,0 +1,29 @@
+'''implement a class called player that represents a cricket player. the player class should have a 
+method called play() which prints "the players is playing cricket.derive a two classes, Batsman and
+Bowler, from the player class.override the play() method in each derived class to print"the Batsman
+is Batting"and"the Bowler is Bowling", respectively.write a program to create subjects or both the
+Batsman and Bowler classes and call the play() method for each object.'''
+
+
+#define the base class player
+class player:
+  def player(self):
+     print("the player is playing cricket.")
+
+  #define the derived class Batsman
+class Batsman(player):
+  def play(self):
+     print("the Batsman is Batting.")
+
+  #define the derived class Bowler
+class Bowler(player):
+  def play(self):
+    print("the Bowler is Bowling.")
+
+#create objects of Batsman and Bowler classes 
+batsman=Batsman()
+bowler=Bowler()
+
+#call the play() method for each object
+batsman.play()
+bowler.play()
